@@ -100,15 +100,23 @@ Dataset for training should be put in:
 ../Data
 ```
 
-Please put pre-trained model in:
+Please put the pre-trained model in:
 
 ```
 ./save
 ```
 
-The weighting of trained Framework will generate in:
+The weights of the trained framework will be generated in:
 
 ```
 ./save
 ```
+
+We also provide one of our framework's training results at:
+
+```
+./save
+```
+
+like: ```exp202402230155_0.pth``` 
 
