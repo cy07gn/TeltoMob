@@ -47,12 +47,12 @@ The train/test/val data is now provided at ./GCT-flow, or in ./model:
 
 ## Graph Construction
 As the implementation is based on pre-calculated distances between road sections, we provided the CSV file with road section distances and IDs at: 
-- GCT Flow: [Distance between connected road segments (in meters)](GCT-flow/nodes_distance.txt). 
+- GCT Flow: [Distance between connected road segments (in meters)](GCT_Flows/nodes_distance.txt). 
 - The distance between Mobility Flows is corresponding to the distance of their starting nodes, 
-  based on: [GPS coordinates for each road segment ID](Incoming_Flows/neighbors_manual_v7_rename.csv).
+  based on: [GPS coordinates for each road segment ID](Mobility_Flows/neighbors_manual_v7_rename.csv).
 
 Run the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/gen_adj_mx.py) to generate the Graph Structure based on the "Road Section Distance" file provided above.
 
 The `processed Graph Structure of Road Section Network` is available at: 
-- GCT Flow: [road network structure file](GCT-flow/adj_mat_input.pkl)
-- Mobility Flow: - [road network structure file](Mobility-Flow/adj_mat_input.pkl)
+- GCT Flow: [road network structure file](GCT_Flows/adj_mat_input.pkl)
+- Mobility Flow: - [road network structure file](Mobility_Flows/adj_mat_input.pkl)
