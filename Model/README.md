@@ -76,13 +76,13 @@ We provide an example of a pre-trained model:
   
   => We use MFGM ([https://arxiv.org/abs/2401.03138](https://arxiv.org/abs/2401.03138)) as an example. This model is pre-trained for feature extraction.
 
-We provide parts of model weights in: 
+We provide one of our training results at:
 
 ```
 ./save
 ```
 
-like: ```exp202308271352_0.pth``` ... ```exp202308271352_2.pth```
+like: ```exp202308271352_0.pth``` 
 
 ## Framework Training
 
