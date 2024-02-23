@@ -97,13 +97,13 @@ We provide instructions on how to construct a road network in the Hsinchu POC ar
 Graph structure construction: To generate the graph structure based on the **..._Distance.txt** file provided below, please follow the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/gen_adj_mx.py). 
 
 #### GCT Flow
-- [GPS coordinates for each road segment ID](./data/GCT-flow/nodes_manual_v7_rename.csv)
-- [Distance between connected road segments (in meters)](./data/GCT-flow/nodes_distance.txt)
-- [road network structure file](./data/GCT-flow/adj_mat_input.pkl)
+- [GPS coordinates for each road segment ID](./Data/GCT-flow/nodes_manual_v7_rename.csv)
+- [Distance between connected road segments (in meters)](./Data/GCT-flow/nodes_distance.txt)
+- [road network structure file](./Data/GCT-flow/adj_mat_input.pkl)
 
 #### Mobility Flow
-- [total route ID](./data/Incoming_Flows/edges_id.csv)
-- [road network structure file](./data/Mobility-Flow/adj_mat_input.pkl)
+- [total route ID](./Data/Incoming_Flows/edges_id.csv)
+- [road network structure file](./Data/Mobility-Flow/adj_mat_input.pkl)
 
 
 * The distance between each two routes (ex: i_to_j and k_to_w) is the distance among their starting route segments (ex: Dis(i,j)) *
@@ -121,8 +121,8 @@ TeltoMob dataset comprises GCT flow and Mobility flow. The Data Structure of Tel
 | 08-29 19:00 |  188        |  ...         |  247        |    21         |    ...        |   53        |
 |         ...         |    ...         |    ...         |    ...         |      ...        |   ...        |
 
-- The original CSV file for GCT flow is available at: [GCT flow.csv](./data/Raw/merged_GCT.csv)
-- The original CSV file for Mobility flow is available at: [Mobility flow.csv](./data/Raw/merged_mobility.csv)
+- The original CSV file for GCT flow is available at: [GCT flow.csv](./Data/Raw/merged_GCT.csv)
+- The original CSV file for Mobility flow is available at: [Mobility flow.csv](./Data/Raw/merged_mobility.csv)
 - To generate the **train/val/test datasets** for each type of GCT flow as {train,val,test}.npz, please follow the [script](https://github.com/liyaguang/DCRNN/blob/master/scripts/generate_training_data.py),
 using the CSV files provided above.
 
@@ -131,10 +131,10 @@ using the CSV files provided above.
 
 The dataset is provided at:
 ```
-./data
+./Data
 ```
 
 Experimental code is provided at:
 ```
-./model
+./Model
 ```
